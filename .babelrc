@@ -1,0 +1,11 @@
+{
+
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }], //decorators支持
+        "@babel/plugin-proposal-function-sent", // generator支持
+        "@babel/plugin-proposal-json-strings", // 换行支持
+        "@babel/plugin-transform-async-to-generator", //async支持
+        "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "comments": false
+}
