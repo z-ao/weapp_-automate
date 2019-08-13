@@ -12,6 +12,11 @@ const OUTPUT_PATH = config.output_path
 gulp.task('script', function() {
     if (!OPTION.init) return;
 
+    if(config.typescript_option.init) {
+        throw('es5+与typescript不能同时开启');
+        return;
+    }
+
     gulp
         .src(TARGET_PATH, { base: DEV_PATH })
         //生成的文件名能够和原文件对上

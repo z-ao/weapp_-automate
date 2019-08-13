@@ -1,38 +1,35 @@
 {
-    "name": "daily-english",
+    "name": "weapp-automate",
     "version": "1.0.0",
-    "description": "daily-english",
-    "main": "gulpfile.js",
+    "description": "weapp-automate",
     "scripts": {
         "build": "gulp",
         "serve": "gulp watch",
         "page": "gulp template --pages",
-        "com": "gulp template --components",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "tsc": "./node_modules/typescript/bin/tsc",
-        "compile": "tsc"
+        "com": "gulp template --components"
     },
     "keywords": [
-        "miniprogram"
+        "weampp",
+        "automate"
     ],
     "dependencies": {
         "lodash": ">=4.17.5",
         "minimatch": ">=3.0.2",
-        "miniprogram-api-typings": "2.6.5-2",
+        "miniprogram-api-typings": "^2.7.7-2",
         "typescript": "3.5.3",
         "wx-server-sdk": "0.0.25"
     },
     "devDependencies": {
-        "@babel/cli": "^7.5.5",
+        "@babel/cli": "7.5.5",
         "@babel/core": "7.5.0",
-        "@babel/plugin-transform-runtime": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
-        "@babel/runtime": "^7.5.5",
-        "@babel/runtime-corejs2": "^7.5.5",
-        "babel-loader": "^8.0.6",
+        "@babel/plugin-transform-runtime": "7.5.5",
+        "@babel/preset-env": "7.5.5",
+        "@babel/runtime": "7.5.5",
+        "@babel/runtime-corejs2": "7.5.5",
+        "babel-loader": "8.0.6",
+        "eslint-friendly-formatter": "4.0.1",
         "gulp": "3.9.1",
-        "gulp-babel": "^8.0.0-beta.2",
+        "gulp-babel": "8.0.0-beta.2",
         "gulp-cssnano": "2.1.3",
         "gulp-eslint": "5.0.0",
         "gulp-less": "4.0.1",
@@ -42,6 +39,6 @@
         "gulp-typescript": "5.0.1",
         "require-dir": "1.1.0",
         "vinyl-named": "1.1.0",
-        "webpack-stream": "^5.2.1"
+        "webpack-stream": "5.2.1"
     }
 }
