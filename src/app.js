@@ -37,13 +37,3 @@ App({
     userInfo: null
   }
 })
-
-var func = async function() {
-  await new Promise((resolve, reject) => {
-    setTimeout(function() {
-      resolve()
-    }, 2000);
-  })
-  console.log('ok');
-}
-func();
