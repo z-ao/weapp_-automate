@@ -5,7 +5,6 @@ const cssnano = require('gulp-cssnano');
 const config = require('../gulp.config.js');
 
 const DEV_PATH = config.target_path
-const OUTPUT_PATH = config.output_path
 
 const OPTION = config.style_option
 
@@ -14,7 +13,7 @@ const TARGET_PATH = OPTION.TARGET_PATH.concat(IGNORE_PATH)
 
 gulp.task('style', function() {
     if (!OPTION.init) return;
-    
+     
     gulp
         .src(TARGET_PATH, { base: DEV_PATH })
         .pipe(less())
@@ -31,5 +30,5 @@ gulp.task('style', function() {
                 path.extname = '.wxss';
             })
         )
-        .pipe(gulp.dest(OUTPUT_PATH));
+        .pipe(gulp.dest(DEV_PATH));
 });
